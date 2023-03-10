@@ -138,16 +138,6 @@ export default class DcrContextPadProvider {
                         }
                     },
 
-                    'append-replace': {
-                        group: 'model',
-                        className: 'bpmn-icon-screw-wrench',
-                        title: translate('Change Event Type'),
-                        action: {
-                        click: appendDcrTaskStart,
-                        dragstart: appendDcrTaskStart
-                        }
-                    },
-
                     'append-connect': {
                         group: 'append',
                         className: 'bpmn-icon-connection',
