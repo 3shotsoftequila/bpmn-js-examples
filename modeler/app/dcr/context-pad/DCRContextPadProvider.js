@@ -40,16 +40,13 @@ export default class DcrContextPadProvider {
         this.elementFactory = elementFactory;
         this.translate = translate;
         this.contextPad = contextPad;
-        this.popupMenu = this.popupMenu;
-
+        //this.popupMenu = this.popupMenu;
         if (config.autoPlace !== false) {
             this.autoPlace = injector.get('autoPlace', false);
         }
 
         contextPad.registerProvider(this);
     }
-
-
     getContextPadEntries(element) {
         
         const {
@@ -221,7 +218,7 @@ export default class DcrContextPadProvider {
                                 cursor: { x: event.x, y: event.y }
                             });
 
-                            popupMenu.open(element, 'bpmn-replace', position, {
+                            popupMenu.open(element, '', position, {
                                 title: translate('Change element'),
                                 width: 300,
                                 search: true
