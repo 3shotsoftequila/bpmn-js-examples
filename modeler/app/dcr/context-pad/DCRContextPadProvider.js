@@ -158,6 +158,26 @@ export default class DcrContextPadProvider {
                         }
                     },
 
+                    'append-replace': {
+                        group: 'edit',
+                        className: 'bpmn-icon-screw-wrench',
+                        title: translate('Change Event Type'),
+                        action: {
+                        click: function(event, element) {//appendDcrTaskStart
+
+                            var position = assign(getReplaceMenuPosition(element), {
+                                cursor: { x: event.x, y: event.y }
+                            });
+
+                            popupMenu.open(element, 'bpmn-replace', position, {
+                                title: translate('Change element'),
+                                width: 300,
+                                search: true
+                              });
+                            }
+                        }
+                    },
+
                 }
                     
             }
