@@ -28,7 +28,7 @@ var modeler = new BpmnModeler({
     paletteModule,
     drawModule,
     contextPadModule,
-    //popupMenuModule 
+    popupMenuModule 
   ],
 
   moddleExtensions: {

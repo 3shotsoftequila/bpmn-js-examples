@@ -9,36 +9,17 @@
     {
       "name": "DcrTask",
       "superClass": [
-        "bpmn:FlowNode",
+        "bpmn:Activity",
         "bpmn:InteractionNode"
-      ],
-      "properties": [
-        {
-          "name": "Role",
-          "type": "String"
-        },
-        {
-          "name": "Event",
-          "type": "String"
-        }
       ]
+      
     },
 
     {
       "name": "DcrTaskInc",
       "superClass": [
-        "bpmn:FlowNode",
+        "bpmn:Activity",
         "bpmn:InteractionNode"
-      ],
-      "properties": [
-        {
-          "name": "Role",
-          "type": "String"
-        },
-        {
-          "name": "Event",
-          "type": "String"
-        }
       ]
     },
 

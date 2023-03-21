@@ -95,3 +95,13 @@ a:link {
 .buttons a.active {
   opacity: 1.0;
 }
+
+
+
+.custom {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.icon-custom-start {
+  background-image: url('./开始游戏.png');
+}

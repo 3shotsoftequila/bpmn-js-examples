@@ -2,6 +2,8 @@
 
 import { assign} from 'min-dash'
 
+//import {Icons } from '../icons/index'
+
 
 export default function DCRPaletteProvider(
     palette, create, elementFactory, 
@@ -149,9 +151,15 @@ DCRPaletteProvider.prototype.getPaletteEntries = function(element) {
                 translate('Create DcrTask (Inc)')
             ),
 
+            /*
             'create.dcr-subprocess': createAction(
                 'dcr:DcrSubProcess', 'activity', 'bpmn-icon-subprocess-expanded', 
                 translate('Create Sub-Process')
+            ),*/
+
+            'create.include-flow': createAction(
+                'dcr:IncludeFlow', 'connector', 'bpmn-icon-connection', 
+                translate('Custom flow: Draw Include-Flow')
             ),
         }
     };
